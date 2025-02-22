@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary)
+}
+
+body{
+        min-height: 100vh;
+    background-image: url('./img/b5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#logo:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.underline-text {
+    text-decoration-color: transparent;
+    text-underline-offset: 0.2rem;
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
+}
+
+.underline-text:hover{
+    text-decoration-color: var(--primary);
+}
